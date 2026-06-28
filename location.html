@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location | Hanging Spoon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Logo.png" alt="Hanging Spoon Logo" class="logo">
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Party Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Visit Us</h1>
+        <p>Find us in the heart of Jabalpur.</p>
+    </section>
+
+    <section class="location-details">
+        <div class="address-box">
+            <h2>Our Address</h2>
+            <p>Anurag Bhawan, 425, Jai Nagar Rd</p>
+            <p>near Yadav Colony, Labour Chowk</p>
+            <p>New Adaresh Colony, Jabalpur</p>
+            <p>Madhya Pradesh 482002</p>
+            
+            <h3>Hours of Operation</h3>
+            <p>Monday - Sunday: 8:30 AM - 11:00 PM</p>
+            
+            <h3>Contact</h3>
+            <p>Phone: +91 97529 44035</p>
+        </div>
+        
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.204561706691!2d79.91721817604944!3d23.16272581108602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981ae00366bc5c9%3A0x8849b2de2ccfa9ad!2sHanging%20Spoon%20Restaurant%20%26%20Caf%C3%A9%20-%20Banquet%20Hall%20-Veg%20Restaurant%20in%20Jabalpur%20-Best%20Restaurant%20in%20Jabalpur!5e0!3m2!1sen!2sin!4v1714151234567!5m2!1sen!2sin" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <a href="https://maps.app.goo.gl/im2DJqNqSaYvLj3x7" target="_blank" class="cta-button">Open in Google Maps</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Hanging Spoon Restaurant & Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

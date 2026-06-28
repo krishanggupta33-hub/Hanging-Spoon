@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanging Spoon | Fine Dining & Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Logo.png" alt="Hanging Spoon Logo" class="logo">
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Party Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Experience Culinary Elegance</h1>
+            <p>Fine dining meets artistic presentation.</p>
+            <a href="events.html" class="cta-button">Book a Table</a>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2 class="section-title">Signature Selections</h2>
+
+        <div class="menu-category">
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4>Gold-Leaf Dal Makhani</h4>
+                    <p>(Slow-cooked black lentils, churned butter, smoked garlic)</p>
+                </div>
+                <div class="item-price">₹229</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4>Paneer Makhmali Tikka</h4>
+                    <p>(Soft paneer with creamy marinade)</p>
+                </div>
+                <div class="item-price">₹269</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4>Evolution Mocktail</h4>
+                    <p>(Signature refreshing blend)</p>
+                </div>
+                <div class="item-price">₹189</div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="menu.html" class="cta-button">Explore the Full Menu</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Hanging Spoon Restaurant & Cafe. All rights reserved.</p>
+            <p>JAIN FOOD AVAILABLE IN EVERY DISH</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

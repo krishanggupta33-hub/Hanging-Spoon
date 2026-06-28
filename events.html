@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Events | Hanging Spoon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Logo.png" alt="Hanging Spoon Logo" class="logo">
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Party Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Host Your Event With Us</h1>
+        <p>Perfect for Kitty Parties, Birthdays, and Corporate Gatherings.</p>
+    </section>
+
+    <section class="booking-form-section">
+        <form class="event-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="event-type">Event Type</label>
+                <select id="event-type" name="event-type">
+                    <option value="kitty-party">Kitty Party</option>
+                    <option value="birthday">Birthday Party</option>
+                    <option value="anniversary">Anniversary</option>
+                    <option value="corporate">Corporate Gathering</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Estimated Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="5" max="100">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <div class="form-group">
+                <label for="requests">Special Requests / Menu Preferences</label>
+                <textarea id="requests" name="requests" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="cta-button">Submit Inquiry</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Hanging Spoon Restaurant & Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // WhatsApp Form Submission
+        document.querySelector('.event-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const eventType = document.getElementById('event-type').value;
+            const guests = document.getElementById('guests').value;
+            const date = document.getElementById('date').value;
+            const requests = document.getElementById('requests').value;
+
+            const whatsappNumber = "919752944035";
+            const message = `*New Party Booking Inquiry!*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Event Type:* ${eventType}%0A*Guests:* ${guests}%0A*Date:* ${date}%0A*Special Requests:* ${requests}`;
+            
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+</body>
+</html>

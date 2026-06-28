@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Hanging Spoon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Logo.png" alt="Hanging Spoon Logo" class="logo">
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Party Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Ambiance & Culinary Art</h1>
+        <p>A glimpse into the Hanging Spoon experience.</p>
+    </section>
+
+    <section class="gallery-grid">
+        <div class="gallery-item"><img src="1.jpg" alt="Interior View"></div>
+        <div class="gallery-item"><img src="2.jpg" alt="Signature Dish"></div>
+        <div class="gallery-item"><img src="3.jpg" alt="Private Dining Room"></div>
+        <div class="gallery-item"><img src="4.jpg" alt="Dessert Presentation"></div>
+        <div class="gallery-item"><img src="5.jpg" alt="Cocktail Bar"></div>
+        <div class="gallery-item"><img src="6.jpg" alt="Exterior Night View"></div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Hanging Spoon Restaurant & Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
