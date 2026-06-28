@@ -1,13 +1,10 @@
-/* =========================================
-   HANGING SPOON OFFICIAL BRAND PALETTE
-   ========================================= */
 :root {
-    --ivory-base: #FFFFFF;        /* Pure white to blend perfectly with the logo background */
-    --ivory-card: #FDF9F3;        /* A very subtle, warm off-white for the menu cards */
-    --gold-accent: #986820;       /* Exact deep golden-bronze matched from Logo.png */
-    --gold-dark: #7A531A;         /* A slightly darker bronze for hover states and titles */
-    --charcoal-text: #362819;     /* Warmed-up dark brown/charcoal for readable text */
-    --gold-shadow: rgba(152, 104, 32, 0.15); /* Shadow tinted with the brand bronze */
+    --ivory-base: #FFFFFF;
+    --ivory-card: #FDF9F3;
+    --gold-accent: #986820;
+    --gold-dark: #7A531A;
+    --charcoal-text: #362819;
+    --gold-shadow: rgba(152, 104, 32, 0.15);
 }
 
 * {
@@ -23,9 +20,6 @@ body {
     line-height: 1.7;
 }
 
-/* =========================================
-   NAVIGATION BAR
-   ========================================= */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -38,7 +32,7 @@ body {
 }
 
 .logo {
-    max-height: 95px; /* Slightly larger to show off the details */
+    max-height: 95px;
 }
 
 .nav-links {
@@ -61,7 +55,6 @@ body {
     color: var(--gold-accent);
 }
 
-/* Hamburger Menu (Hidden by default on PC) */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -76,9 +69,6 @@ body {
     transition: all 0.3s ease;
 }
 
-/* =========================================
-   HERO SECTION
-   ========================================= */
 .hero {
     height: 80vh;
     display: flex;
@@ -126,9 +116,6 @@ body {
     box-shadow: 0 5px 15px var(--gold-shadow);
 }
 
-/* =========================================
-   MENU & PAGE SECTIONS
-   ========================================= */
 .menu-section {
     max-width: 1000px;
     margin: 0 auto;
@@ -211,9 +198,6 @@ body {
     font-style: italic;
 }
 
-/* =========================================
-   LOCATION MAP & BOX
-   ========================================= */
 .location-details {
     display: flex;
     flex-wrap: wrap;
@@ -266,9 +250,6 @@ body {
     border-radius: 4px;
 }
 
-/* =========================================
-   PHOTO GALLERY
-   ========================================= */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -300,9 +281,6 @@ body {
     transform: scale(1.1); 
 }
 
-/* =========================================
-   EVENT BOOKING FORM
-   ========================================= */
 .booking-form-section {
     max-width: 700px;
     margin: 0 auto;
@@ -359,9 +337,6 @@ body {
     margin-top: 1.5rem;
 }
 
-/* =========================================
-   FOOTER
-   ========================================= */
 footer {
     background-color: var(--ivory-card);
     text-align: center;
@@ -376,9 +351,6 @@ footer p {
     letter-spacing: 1px;
 }
 
-/* =========================================
-   MOBILE RESPONSIVENESS (Media Queries)
-   ========================================= */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
